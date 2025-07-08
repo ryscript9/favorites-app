@@ -30,8 +30,10 @@ cd backend
 
 ## 2. Configure Environment Variables
 Create a .env file in /backend:
+```
 DATABASE_URL="mysql://root:@localhost:3306/favorites"
 PORT=4000
+```
 
 ## 3. Install dependencies
 ```bash
@@ -65,7 +67,9 @@ npm install
 
 ## 3. Configure Environment Variables
 Create a .env file in /frontend:
+```
 VITE_API_URL=http://localhost:4000
+```
 
 ## 4. Run the Frontend
 ```bash
