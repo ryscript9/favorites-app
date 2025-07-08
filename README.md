@@ -28,19 +28,22 @@ Below are step-by-step instructions to run the app locally.
 cd backend
 ```
 
-## 2. Install dependencies
+## 2. Configure Environment Variables
+Create a .env file in /backend:
+```
+DATABASE_URL="mysql://root:@localhost:3306/favorites"
+PORT=4000
+```
+
+## 3. Install dependencies
 ```bash
 npm install
 ```
 
-## 3. Configure Environment Variables
-Create a .env file in /backend:
-DATABASE_URL="mysql://root:@localhost:3306/favorites"
-PORT=4000
-
-## 4. Initialize Prisma
+## 4. Initialize Prisma & Seed Data
 ```bash
 npx prisma migrate dev --name init
+npm run seed
 ```
 
 ## 5. Run the Backend
@@ -64,7 +67,9 @@ npm install
 
 ## 3. Configure Environment Variables
 Create a .env file in /frontend:
+```
 VITE_API_URL=http://localhost:4000
+```
 
 ## 4. Run the Frontend
 ```bash
