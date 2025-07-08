@@ -38,9 +38,10 @@ Create a .env file in /backend:
 DATABASE_URL="mysql://root:@localhost:3306/favorites"
 PORT=4000
 
-## 4. Initialize Prisma
+## 4. Initialize Prisma & Seed Data
 ```bash
 npx prisma migrate dev --name init
+npm run seed
 ```
 
 ## 5. Run the Backend
