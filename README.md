@@ -28,15 +28,15 @@ Below are step-by-step instructions to run the app locally.
 cd backend
 ```
 
-## 2. Install dependencies
-```bash
-npm install
-```
-
-## 3. Configure Environment Variables
+## 2. Configure Environment Variables
 Create a .env file in /backend:
 DATABASE_URL="mysql://root:@localhost:3306/favorites"
 PORT=4000
+
+## 3. Install dependencies
+```bash
+npm install
+```
 
 ## 4. Initialize Prisma & Seed Data
 ```bash
